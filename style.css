@@ -1,0 +1,29 @@
+/* Основной фон и текст страницы */
+body {
+    background-color: #1e1e1e; /* темно-серый фон */
+    color: #d0d0d0; /* белый текст */
+    font-family: Arial, sans-serif; /* простой читаемый шрифт */
+    margin: 0;
+    padding: 0;
+}
+
+/* Блок описания компании */
+.company-description {
+    max-width: 800px; /* максимальная ширина текста */
+    margin: 50px auto; /* отступ сверху и центрирование по горизонтали */
+    padding: 20px 30px; /* внутренние отступы */
+}
+
+/* Заголовок внутри блока */
+.company-description h1 {
+    text-align: center; /* выравнивание по центру */
+    margin-bottom: 30px; /* отступ снизу */
+    color: #d0d0d0; /* светлый оттенок для заголовка */
+}
+
+/* Абзацы внутри блока */
+.company-description p {
+    margin-bottom: 20px; /* отступ между абзацами */
+    line-height: 1.6; /* высота строк для удобного чтения */
+    font-size: 18px; /* размер текста */
+}

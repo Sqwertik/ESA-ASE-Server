@@ -1,0 +1,62 @@
+/* Основной фон и текст страницы */
+body {
+    background-color: #1e1e1e; /* темно-серый фон */
+    color: #ffffff; /* белый текст */
+    font-family: Arial, sans-serif; /* читаемый шрифт */
+    margin: 0;
+    padding: 0;
+}
+
+/* Контейнер для формы и заголовка */
+.container {
+    max-width: 500px; /* ограничение ширины */
+    margin: 100px auto; /* центрирование и отступ сверху */
+    text-align: center; /* выравнивание содержимого по центру */
+}
+
+/* Заголовок */
+.container h1 {
+    margin-bottom: 30px; /* отступ снизу */
+    color: #d0d0d0; /* чуть светлее текст заголовка */
+}
+
+/* Поле ввода */
+#carInput {
+    width: 80%; /* ширина поля относительно контейнера */
+    padding: 10px; /* внутренние отступы */
+    font-size: 16px; /* размер текста */
+    border: 2px solid #d0d0d0; /* рамка поля ввода */
+    border-radius: 5px; /* скругление углов */
+    background-color: #2e2e2e; /* чуть светлее серый фон внутри поля */
+    color: #ffffff; /* цвет текста */
+}
+
+/* Подсказка внутри поля */
+#carInput::placeholder {
+    color: #888888; /* серый цвет подсказки */
+}
+
+/* Кнопка */
+#checkButton {
+    margin-top: 20px; /* отступ сверху */
+    padding: 10px 20px; /* внутренние отступы */
+    font-size: 16px; /* размер текста */
+    border: none; /* убираем стандартную рамку */
+    border-radius: 5px; /* скругление углов */
+    background-color: #007bff; /* синий фон */
+    color: white; /* белый текст */
+    cursor: pointer; /* курсор как рука */
+}
+
+/* Эффект при наведении на кнопку */
+#checkButton:hover {
+    background-color: #0056b3; /* темно-синий при наведении */
+}
+
+/* Сообщение об ошибке */
+#errorMessage {
+    color: #ff5555; /* красный текст */
+    margin-top: 10px; /* отступ сверху */
+    font-size: 14px; /* размер текста чуть меньше */
+}
+

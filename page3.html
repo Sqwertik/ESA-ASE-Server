@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Your Car</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Заголовок страницы -->
+        <h1>Check Your Car</h1>
+
+        <!-- Поле ввода номера автомобиля -->
+        <input type="text" id="carInput" placeholder="Enter your car number">
+
+        <!-- Кнопка для проверки -->
+        <button id="checkButton">Check</button>
+
+        <!-- Сообщение об ошибке -->
+        <div id="errorMessage"></div>
+    </div>
+
+    <script>
+        // Находим элементы по id
+        const input = document.getElementById('carInput');
+        const button = document.getElementById('checkButton');
+        const errorMessage = document.getElementById('errorMessage');
+
+        // Обработчик кнопки
+        button.addEventListener('click', function() {
+            if (input.value === '122559') {
+                // Открытие новой страницы
+                window.open('page4.html', '_blank'); 
+
+
+            } else {
+                // Показ сообщения об ошибке под полем ввода
+                errorMessage.textContent = 'Incorrect input, please check your car number again';
+            }
+        });
+
+        // Очистка сообщения при новом вводе
+        input.addEventListener('input', function() {
+            errorMessage.textContent = '';
+        });
+    </script>
+
+</body>
+</html>
+
