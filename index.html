@@ -3,66 +3,58 @@
 <head>
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body {
-      background-color: #1e1e1e;
-      color: #d0d0d0;
-      font-family: Arial, sans-serif;
+    /* Общие стили */
+body {
+  background-color: #1e1e1e;
+  color: #d0d0d0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
-    }
-
-    a {
-      color: #d0d0d0;
-      text-decoration: none;
-      margin: 0 15px;
-      font-size: 20px;
-    }
-
-    a:hover {
-      color: #909090
-    }
-
-
-
-    .center-link {
-      display: block; /* превращает ссылку в блок */
-      text-align: center; /*выравнивание текста по центру */
-      margin-top: 500px; /*отступ сверху */
-      font-size: 24px; /*размер текста */
-      font-weight: bold; /*жирный шрифт */
-      color: blue ; /*цыет текста */
-      text-decoration: none; /*убирает подчеркивание у ссылки */
-
-    }
-
-    .fewleft-link {
-      display: block; /* превращает ссылку в блок */
-      margin-left: 25%;
-      margin-top: 50px; /*отступ сверху */
-      font-size: 24px; /*размер текста */
-      font-weight: bold; /*жирный шрифт */
-      color: blue ; /*цыет текста */
-      text-decoration: none; /*убирает подчеркивание у ссылки */
-    }
-
-    .nav {
+/* Навигация */
+.nav {
   display: flex;
-  justify-content: flex-start; /* ссылки слева */
-  gap: 200px; /* расстояние между ссылками */
-  padding-left: 500px; /* сдвигаем первую ссылку правее */
-  margin-top: 50px;
+  justify-content: center; /* ссылки по центру */
+  gap: 300px; /* расстояние между ссылками */
+  margin-top: 70px; /* отступ сверху */
 }
 
 .nav-link {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
   text-decoration: none;
+  color: #d0d0d0;
 }
 
-    h1 {
-      text-align: center;
-      margin-top: 300px;
+.nav-link:hover {
+  color: #909090;
+}
 
-    }
+/* Заголовок */
+h1 {
+  text-align: center;
+  margin-top: 300px; /* отступ сверху (меньше чем было) */
+}
+
+/* Адаптивность для телефонов */
+@media (max-width: 600px) {
+  .nav {
+    flex-direction: column; /* ссылки одна под другой */
+    gap: 20px; /* меньше расстояние */
+    margin-top: 20px;
+  }
+
+  h1 {
+    margin-top: 80px; /* заголовок ближе к верху */
+    font-size: 22px; /* текст поменьше */
+  }
+
+  .nav-link {
+    font-size: 18px;
+  }
+}
+
 
   </style>
   <meta charset="UTF-8">
@@ -81,5 +73,4 @@
 
   
 </body>
-
 </html>
